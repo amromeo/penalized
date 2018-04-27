@@ -170,9 +170,9 @@
   if (nrow(penalized) != n) {
     stop("the length of \"response\" (",n, ") does not match the row count of \"penalized\" (", nrow(penalized), ")")
   }
-  if (nrow(unpenalized) != n) {
-    stop("the length of \"response\" (",n, ") does not match the row count of \"unpenalized\" (", nrow(unpenalized), ")")
-  }
+#  if (nrow(unpenalized) != n) {
+#    stop("the length of \"response\" (",n, ") does not match the row count of \"unpenalized\" (", nrow(unpenalized), ")")
+#  }
 
   # expand positive if necessary
   if (!missing("positive"))
