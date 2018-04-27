@@ -167,6 +167,7 @@
   } else {
     n <- length(response)
   }
+   unpenalized<-matrix(data = NA, nrow = n, ncol = 0, byrow = FALSE)
   if (nrow(penalized) != n) {
     stop("the length of \"response\" (",n, ") does not match the row count of \"penalized\" (", nrow(penalized), ")")
   }
